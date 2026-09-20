@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Your self</title>
+    <link rel="stylesheet" href="./live-yourself.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Another+Hand&family=Ma+Shan+Zheng&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div id="pageTransition" class="page-overlay"></div>
+
+    <div class="welcome" id="welcomeBox">
+        <button id="clickBtn" class="clickme">Welcome Stranger ✨ </button>
+    </div>
+
+    <div class="hero-card hidden" id="heroCard">
+        <h1 class="heroTitle">Live Yourself</h1>
+        <h2 class="hero-SubTitle">
+            Your world deserves love
+        </h2>
+        <span>Try to love yourself</span>
+    </div>
+
+    <div class="intro-container hidden" id="intro-container">
+        <img class="smileCup" src="./images/Smile_cup.png" alt="Smile_cup">
+        <p class="intro-message">
+            Not everything that ends is a loss, sometimes it is just life making room for you to bloom. <br>
+            Take this moment to celebrate how far you have come and how much strength lives inside you.
+        </p>
+    </div>
+
+    <div class="cardBox hidden" id="cardBox">
+        <h1 class="btnText">For you</h1>
+        <button id="cardBtn"><img class="card-box" src="./images/heartplaster.png" alt="card-box"></button>
+    </div>
+
+    <div id="quoteCard-container" class="quoteCard-container hidden">
+        <div class="quoteCard">
+            <h1 class="quoteTitle">
+                #1 Honor Your Heart
+                <img class="quoteImage" src="./images/purple-heart.png" alt="purple-heart">
+            </h1>
+            <p class="quoteText">
+                Heartbreak is a slow, suffocating poison that turns the simple act of existing into a quiet, agonizing
+                ritual. It is a physical, hollow ache.... 
+                <button class="read-me">read more</button>
+            </p>
+        </div>
+
+        <div class="quoteCard">
+            <h1 class="quoteTitle">
+                #2 It's Your World
+                <img class="quoteImage" src="./images/chill-cup.png" alt="chill-cup">
+            </h1>
+            <p class="quoteText">
+                When they walked away, they did not just leave; they drained every drop of color from your skies and left you wandering through....
+                <button class="read-me">read more</button>
+            </p>
+        </div>
+
+        <div class="quoteCard">
+            <h1 class="quoteTitle">
+                #3 Blooming at Your Own World
+                <img class="quoteImage" src="./images/blooming-globe.png" alt="blooming-globe">
+            </h1>
+            <p class="quoteText">
+                They tell you that time heals all wounds, but time right now feels like a stagnant, black ocean in which you are slowly, helplessly...
+                <button class="read-me">read more</button>
+            </p>
+        </div>
+
+        <div class="quoteCard">
+            <h1 class="quoteTitle">
+                #4 The Beauty of Unwritten Chapters
+                <img class="quoteImage" src="./images/chapter-end.png" alt="chapter-end">
+            </h1>
+            <p class="quoteText">
+                Not every ending is a loss; sometimes it is just life closing a door so you don't stay trapped in a space where you will eventually lose...
+                <button class="read-me">read more</button>
+            </p>
+        </div>
+
+        <div class="quoteCard">
+            <h1 class="quoteTitle">
+                #5 A Heartfelt Promise
+                <img class="quoteImage" src="./images/sleepy-cloud.png" alt="sleepy-cloud">
+            </h1>
+            <p class="quoteText">
+                In the darkest, most suffocating hour before the dawn, when the silence presses against your temples like a physical weight.... 
+                <button class="read-me">read more</button>
+            </p>
+        </div>
+
+        <button id="resetBtn" class="reset-btn hidden">✨ Read Again</button>
+    </div>
+
+    <div id="quoteModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <div class="modal-header">
+                <h1 id="modalTitle" class="modal-title">#1 Honor Your Heart</h1>
+                <img id="modalImage" class="modal-image" src="./images/purple-heart.png" alt="card image">
+            </div>
+            <div class="modal-body">
+                <p id="modalText" class="modal-text"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./live-yourself.js"></script>
+</body>
+
+</html>
